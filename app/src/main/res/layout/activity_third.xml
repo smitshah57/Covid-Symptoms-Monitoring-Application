@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity"
+    android:padding="50dp"
+    android:background="@mipmap/myimage_6_background">
+
+    <Button
+        android:id="@+id/heart_rate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/heart_rate_button"
+        android:layout_marginTop="35dp"
+        android:text="Heart Rate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Heart Rate"
+        android:textSize="20dp"
+        android:layout_marginTop="105dp"
+        android:textColor="@color/black"
+        android:id="@+id/measure_heart_rate"></TextView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp"
+        android:text="Respiratory Rate"
+        android:id="@+id/res_rate_button"></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Respiratory Rate"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="255dp"
+        android:id="@+id/measure_respiratory_rate"></TextView>
+
+
+    <Button
+        android:id="@+id/upload_data"
+        android:layout_marginTop="480dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Data" />
+
+    <Button
+        android:id="@+id/symptoms"
+        android:layout_toRightOf="@+id/upload_data"
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginTop="480dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Symptoms" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:max="10000"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@+id/progressBar"
+        android:text="Please lie down and place the smartphone on your chest"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp">
+
+    </TextView>
+</RelativeLayout>
